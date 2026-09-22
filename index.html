@@ -161,7 +161,7 @@ p{margin:0}
 </style>
 </head>
 <body>
-<div class="intro" id="intro"><video id="introV" muted autoplay playsinline preload="auto" aria-label="Damasceno Creative"><source src="/intro.webm" type="video/webm"><source src="/intro.mp4" type="video/mp4"></video><button type="button" class="intro-skip" id="introSkip" data-i="skip_intro">Pular</button></div>
+<div class="intro" id="intro"><video id="introV" muted autoplay playsinline preload="auto" aria-label="Damasceno Creative"><source src="/intro.webm" type="video/webm"><source src="/intro.mp4" type="video/mp4"></video></div>
 <script>(function(){var s=null;try{s=sessionStorage.getItem('dc-intro')}catch(e){}var f=/[?&]intro/.test(location.search);if(!f&&(s||matchMedia('(prefers-reduced-motion: reduce)').matches)){document.getElementById('intro').remove()}else{document.documentElement.style.overflow='hidden'}})();</script>
 <a class="skip" href="#conteudo" data-i="skip">Pular para o conteúdo</a>
 <header class="hd"><div class="wrap">
@@ -308,8 +308,7 @@ function renderPF(){const s=$('#portfolio');if(!PORTFOLIO.length){s.hidden=true;
  v.addEventListener('ended',()=>setTimeout(end,250));v.addEventListener('error',end,true);
  const p=v.play();if(p&&p.catch)p.catch(end);
  setTimeout(()=>{if(v.currentTime===0)end()},3500);setTimeout(end,8000);
- $('#introSkip').addEventListener('click',end);o.addEventListener('click',end);
- document.addEventListener('keydown',e=>{if(e.key==='Escape')end()},{once:true})})();
+ })();
 /* formulário */
 const F=$('#form'),T0=Date.now();
 function fe(n,k){const i=F.elements[n],e=i.closest('.fld').querySelector('.ferr');i.setAttribute('aria-invalid',k?'true':'false');e.dataset.k=k||'';e.textContent=k?t(k):''}
