@@ -1,0 +1,22 @@
+SITE DAMASCENO CREATIVE (versão reformulada)
+
+ATUALIZAR NO AR (site já publicado na Vercel)
+1. Descompacte este arquivo.
+2. No repositório do site no GitHub: Add file > Upload files.
+3. Arraste os arquivos e clique em Commit changes.
+   A Vercel publica sozinha em cerca de 1 minuto.
+
+CONFIGURAR (index.html, procure por CONFIG)
+whatsapp:      só números, com 55 + DDD. Ex.: '5521999998888'
+email:         ex.: 'contato@damascenocreative.com'
+instagram:     já preenchido (damascenocreative)
+formEndpoint:  endereço de um serviço de formulário, se usar um
+privacidade:   link da Política de Privacidade, quando existir
+Itens vazios não aparecem no site.
+
+PORTFÓLIO (index.html, procure por PORTFOLIO)
+A seção fica oculta até você adicionar trabalhos reais.
+
+QUANDO COMPRAR O DOMÍNIO
+Troque https://damascenocreative.vercel.app/ pelo novo endereço
+(aparece 3 vezes no topo do index.html).
